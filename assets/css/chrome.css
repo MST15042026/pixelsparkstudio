@@ -1,0 +1,173 @@
+html {
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* footer extras */
+.footer__extras {
+  margin-top: 16px;
+}
+
+.footer__extrasInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-social {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-social__icon {
+  display: block;
+}
+
+.footer__poemWrap {
+  max-width: 520px;
+}
+
+.footer-poem {
+  opacity: 0.9;
+  font-size: 0.95em;
+  line-height: 1.35;
+}
+
+/* --- injected by logo step --- */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px
+}
+
+.brand-logo {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  flex: 0 0 auto
+}
+
+.brand-logo * {
+  vector-effect: non-scaling-stroke
+}
+
+/* --- /injected by logo step --- */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Responsive order utilities (for projects not using Tailwind build) */
+@media (min-width: 1024px) {
+
+  /* lg:order-1 -> order: 1 on large screens */
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  /* lg:order-2 -> order: 2 on large screens */
+  .lg\:order-2 {
+    order: 2;
+  }
+}
+
+/* --- Policy / Terms specific utilities --- */
+.card-wrapper {
+  width: 100%;
+  background-color: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 1.5rem;
+}
+
+.rounded-card-lg {
+  border-radius: 1rem;
+}
+
+.shadow-soft {
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+}
+
+.bg-zebra-neutral {
+  background-color: rgba(255,255,255,0.01);
+}
+
+.p-tenpt {
+  padding: 2.5rem;
+}
+
+.accent-headings {
+  color: #e6eef6;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.text-premium {
+  color: #06b6d4; /* cyan accent */
+}
+
+.last-updated,
+.text-muted {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.content-section {
+  margin-top: 1rem;
+  color: #cbd5e1;
+}
+
+.content-section h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+.content-section p,
+.content-section li {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.text-muted small {
+  color: #94a3b8;
+}
