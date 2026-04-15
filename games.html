@@ -1,0 +1,1025 @@
+<!doctype html>
+<html data-page="games.html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Games | PixelSpark Studio</title>
+    <meta
+      name="description"
+      content="Explore all our casual and hyper-casual games by genre. Vibrant hyper-casual mobile experiences."
+    />
+    <meta property="og:title" content="Our Games | PixelSpark Studio" />
+    <meta
+      property="og:description"
+      content="Explore all our casual and hyper-casual games by genre. Vibrant hyper-casual mobile experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/blog_update.webp" />
+
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/chrome.css" />
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body class="bg-slate-900 text-slate-100 font-sans">
+    <header class="sticky top-0 z-50 bg-gray-900 text-white shadow-lg border-b border-gray-800">
+      <div
+        class="container max-w-[1410px] mx-auto px-4 w-full flex items-center justify-between h-20"
+      >
+        <a
+          href="index.html"
+          class="flex items-center gap-3 text-orange-500 font-bold text-xl tracking-tight"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M4 2h12l4 4v8l-4 4h-6v4H4V2z M14 4l-5 7h4l-3 5 6-7h-4l2-5z M20 2h2v2h-2z M20 16h2v2h-2z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span class="text-white">PixelSpark Studio</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-gray-300 hover:text-orange-500 transition-colors"
+            >Home</a
+          >
+          <a href="about.html" class="text-gray-300 hover:text-orange-500 transition-colors"
+            >About</a
+          >
+          <a href="games.html" class="text-gray-300 hover:text-orange-500 transition-colors"
+            >Games</a
+          >
+          <a href="blog.html" class="text-gray-300 hover:text-orange-500 transition-colors">Blog</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a
+            href="games.html"
+            class="hidden md:inline-flex items-center justify-center bg-orange-500 text-white px-6 py-2.5 rounded-2xl hover:bg-orange-600 transition-colors font-medium shadow-md"
+            >See Our Games</a
+          >
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden text-gray-300 hover:text-white focus:outline-none p-2"
+            aria-label="Open menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="fixed inset-0 bg-gray-900 z-50 hidden flex-col pt-20 px-6 pb-6">
+        <nav class="flex flex-col gap-6 text-center text-xl mt-8">
+          <a
+            href="index.html"
+            class="text-gray-200 hover:text-orange-500 font-medium transition-colors"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-200 hover:text-orange-500 font-medium transition-colors"
+            >About</a
+          >
+          <a
+            href="games.html"
+            class="text-gray-200 hover:text-orange-500 font-medium transition-colors"
+            >Games</a
+          >
+          <a
+            href="blog.html"
+            class="text-gray-200 hover:text-orange-500 font-medium transition-colors"
+            >Blog</a
+          >
+          <a
+            href="games.html"
+            class="bg-orange-500 text-white px-6 py-3 rounded-2xl hover:bg-orange-600 transition-colors font-medium mt-6 mx-auto w-full max-w-xs shadow-md"
+            >See Our Games</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero-small" class="relative bg-slate-900 text-slate-100 py-24 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="max-w-3xl mx-auto text-center">
+            <h1
+              class="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500 neon-text-pink tracking-tight"
+            >
+              Our Games
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 leading-relaxed">
+              Explore our expanding universe of casual and hyper-casual mobile experiences. Vibrant
+              visuals, energetic gameplay, and endless fun await.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured-release" class="bg-slate-800 text-slate-100 py-20 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <img
+                src="assets/img/hero_games.webp"
+                alt="Featured Mobile Game"
+                class="w-full rounded-3xl shadow-2xl shadow-cyan-500/20 aspect-video object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div class="space-y-6">
+              <div
+                class="inline-block px-4 py-2 bg-orange-500/20 text-orange-400 font-bold rounded-full text-sm uppercase tracking-wider"
+              >
+                Latest Release
+              </div>
+              <h2 class="text-4xl font-bold text-cyan-400 neon-text-cyan">Neon Dash 3D</h2>
+              <p class="text-lg text-slate-300">
+                Dive into the fastest runner game of the year. Swipe, dodge, and collect glowing
+                orbs in a vibrant cyber-world. Compete with players globally and climb the
+                leaderboards. Available now on all major mobile platforms.
+              </p>
+              <div class="pt-4">
+                <a
+                  href="#contact"
+                  class="inline-block px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-3xl transition-all shadow-lg shadow-cyan-500/30"
+                  >Download Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="top-downloads" class="bg-slate-900 text-slate-100 py-20 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-orange-400">Top Downloads</h2>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+              Discover the fan-favorite titles that have millions of active players tapping away
+              every single day.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+              class="bg-slate-800 rounded-3xl p-6 shadow-xl border border-slate-700 hover:border-pink-500 transition-colors"
+            >
+              <img
+                src="assets/img/game_puzzle.webp"
+                alt="Puzzle Game"
+                class="w-full rounded-2xl aspect-square object-cover mb-6"
+                loading="lazy"
+              />
+              <h3 class="text-2xl font-bold text-white mb-2">Glow Blocks</h3>
+              <p class="text-slate-400 mb-4">
+                Match vibrant glowing pieces in this relaxing yet challenging puzzle adventure.
+                Endless levels of mental exercise.
+              </p>
+              <span class="text-pink-400 font-semibold">10M+ Players</span>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-6 shadow-xl border border-slate-700 hover:border-cyan-500 transition-colors"
+            >
+              <img
+                src="assets/img/game_action.webp"
+                alt="Action Game"
+                class="w-full rounded-2xl aspect-square object-cover mb-6"
+                loading="lazy"
+              />
+              <h3 class="text-2xl font-bold text-white mb-2">Hyper Strike</h3>
+              <p class="text-slate-400 mb-4">
+                Fast-paced arcade shooter with endless waves of brightly colored enemies. Test your
+                reflexes to the limit.
+              </p>
+              <span class="text-cyan-400 font-semibold">5M+ Players</span>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-6 shadow-xl border border-slate-700 hover:border-orange-500 transition-colors"
+            >
+              <img
+                src="assets/img/game_character.webp"
+                alt="Character Game"
+                class="w-full rounded-2xl aspect-square object-cover mb-6"
+                loading="lazy"
+              />
+              <h3 class="text-2xl font-bold text-white mb-2">Jumping Jack</h3>
+              <p class="text-slate-400 mb-4">
+                Bounce your way to the top in this addictive vertical platformer. Unlock crazy
+                costumes and power-ups.
+              </p>
+              <span class="text-orange-400 font-semibold">8M+ Players</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="by-genre" class="bg-slate-800 text-slate-100 py-20 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div class="max-w-xl">
+              <h2 class="text-4xl font-bold mb-4 text-pink-500 neon-text-pink">Games By Genre</h2>
+              <p class="text-lg text-slate-300">
+                Whether you want a quick mental workout or an adrenaline rush, we have something
+                perfectly crafted for you.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="relative group overflow-hidden rounded-3xl aspect-square">
+              <img
+                src="assets/img/mobile_gameplay_1.webp"
+                alt="Action Games"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-8"
+              >
+                <h3 class="text-2xl font-bold text-white">Action</h3>
+              </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-3xl aspect-square">
+              <img
+                src="assets/img/game_puzzle_1.webp"
+                alt="Puzzle Games"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-8"
+              >
+                <h3 class="text-2xl font-bold text-white">Puzzle</h3>
+              </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-3xl aspect-square">
+              <img
+                src="assets/img/game_character_1.webp"
+                alt="Arcade Games"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-8"
+              >
+                <h3 class="text-2xl font-bold text-white">Arcade</h3>
+              </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-3xl aspect-square">
+              <img
+                src="assets/img/hero_games_1.webp"
+                alt="Strategy Games"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-8"
+              >
+                <h3 class="text-2xl font-bold text-white">Strategy</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="all-games" class="bg-slate-900 text-slate-100 py-20 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-cyan-400">Complete Catalog</h2>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+              Browse through our entire collection of mobile hits. We continuously update and refine
+              our games to ensure the best experience.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_1.webp"
+                alt="Neon Dash"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Neon Dash</h4>
+              <p class="text-sm text-slate-400 mt-2">Action</p>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_2.webp"
+                alt="Glow Blocks"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Glow Blocks</h4>
+              <p class="text-sm text-slate-400 mt-2">Puzzle</p>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_3.webp"
+                alt="Hyper Strike"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Hyper Strike</h4>
+              <p class="text-sm text-slate-400 mt-2">Arcade</p>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_4.webp"
+                alt="Jumping Jack"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Jumping Jack</h4>
+              <p class="text-sm text-slate-400 mt-2">Action</p>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_5.webp"
+                alt="Color Loop"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Color Loop</h4>
+              <p class="text-sm text-slate-400 mt-2">Puzzle</p>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_6.webp"
+                alt="Space Drift"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Space Drift</h4>
+              <p class="text-sm text-slate-400 mt-2">Arcade</p>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_7.webp"
+                alt="Cube Runner"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Cube Runner</h4>
+              <p class="text-sm text-slate-400 mt-2">Action</p>
+            </div>
+            <div
+              class="bg-slate-800 rounded-3xl p-4 shadow-lg flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/img/game_icon_8.webp"
+                alt="Merge Masters"
+                class="w-24 h-24 rounded-2xl aspect-square object-cover mb-4"
+                loading="lazy"
+              />
+              <h4 class="text-xl font-bold text-white">Merge Masters</h4>
+              <p class="text-sm text-slate-400 mt-2">Strategy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="coming-soon" class="bg-slate-800 text-slate-100 py-20 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-orange-400">Coming Soon</h2>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+              Get a sneak peek at the exciting new projects currently in development in our studio.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div
+              class="flex flex-col md:flex-row bg-slate-900 rounded-3xl overflow-hidden border border-slate-700 shadow-xl"
+            >
+              <div class="w-full md:w-1/2">
+                <img
+                  src="assets/img/game_action_2.webp"
+                  alt="Velocity X"
+                  class="w-full h-full object-cover aspect-video md:aspect-auto"
+                  loading="lazy"
+                />
+              </div>
+              <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
+                <span class="text-pink-500 font-bold text-sm uppercase tracking-wider mb-2"
+                  >Beta in Q3</span
+                >
+                <h3 class="text-2xl font-bold text-white mb-3">Velocity X</h3>
+                <p class="text-slate-400">
+                  Experience anti-gravity racing with stunning neon visuals and an electrifying
+                  synthesizer soundtrack.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row bg-slate-900 rounded-3xl overflow-hidden border border-slate-700 shadow-xl"
+            >
+              <div class="w-full md:w-1/2">
+                <img
+                  src="assets/img/game_puzzle_2.webp"
+                  alt="Crystal Core"
+                  class="w-full h-full object-cover aspect-video md:aspect-auto"
+                  loading="lazy"
+                />
+              </div>
+              <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
+                <span class="text-cyan-500 font-bold text-sm uppercase tracking-wider mb-2"
+                  >Alpha Testing</span
+                >
+                <h3 class="text-2xl font-bold text-white mb-3">Crystal Core</h3>
+                <p class="text-slate-400">
+                  A soothing yet complex spatial puzzle game featuring beautiful glowing crystals
+                  and meditative audio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="bg-slate-900 text-slate-100 py-20 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-pink-500">Player Reviews</h2>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+              See what our global community of players is saying about our top titles.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700">
+              <div class="flex mb-4">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "Neon Dash is the perfect game for my daily commute. The visuals are incredibly
+                striking and the gameplay is super responsive."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center font-bold text-white mr-4"
+                >
+                  A
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">Alex M.</h4>
+                  <span class="text-sm text-slate-500">App Store Review</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700">
+              <div class="flex mb-4">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "I can't stop playing Glow Blocks. It's relaxing but gets extremely challenging just
+                when you think you've mastered it."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center font-bold text-white mr-4"
+                >
+                  S
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">Sarah K.</h4>
+                  <span class="text-sm text-slate-500">Play Store Review</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700">
+              <div class="flex mb-4">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-5 h-5 text-slate-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "Hyper Strike brings back classic arcade vibes with a modern twist. The particle
+                effects are absolutely mind-blowing!"
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center font-bold text-white mr-4"
+                >
+                  D
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">David J.</h4>
+                  <span class="text-sm text-slate-500">App Store Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-slate-800 text-slate-100 py-20 noise-bg">
+        <div class="container mx-auto max-w-[1410px] px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+              <h2 class="text-4xl font-bold mb-6 text-cyan-400">Get In Touch</h2>
+              <p class="text-lg text-slate-300 mb-10">
+                Have questions about our games, partnership opportunities, or support issues? Send
+                us a message and our dedicated team will get back to you swiftly.
+              </p>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-pink-500 mr-4 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                    ></path>
+                  </svg>
+                  <div>
+                    <h4 class="text-white font-bold mb-1">Phone</h4>
+                    <a
+                      href="tel:+14155550191"
+                      target="_blank"
+                      class="text-slate-400 hover:text-cyan-400 transition-colors"
+                      >+1 415 555 0191</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-pink-500 mr-4 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div>
+                    <h4 class="text-white font-bold mb-1">Email</h4>
+                    <a
+                      href="mailto:hello@pixelsparkstudio.com"
+                      target="_blank"
+                      class="text-slate-400 hover:text-cyan-400 transition-colors"
+                      >hello@pixelsparkstudio.com</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-pink-500 mr-4 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div>
+                    <h4 class="text-white font-bold mb-1">Office</h4>
+                    <a
+                      href="https://maps.app.goo.gl/eYA2gBJjRe2C3vfT6"
+                      target="_blank"
+                      class="text-slate-400 hover:text-cyan-400 transition-colors leading-relaxed block"
+                      >101 California Street<br />San Francisco, CA 94111, USA</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900 p-8 rounded-3xl border border-slate-700 shadow-xl">
+              <form action="send_post.php" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="firstName" class="block text-sm font-bold text-slate-400 mb-2"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label for="lastName" class="block text-sm font-bold text-slate-400 mb-2"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required
+                      class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-bold text-slate-400 mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <label for="inquiryType" class="block text-sm font-bold text-slate-400 mb-2"
+                    >Inquiry Type</label
+                  >
+                  <div class="relative">
+                    <select
+                      id="inquiryType"
+                      name="inquiryType"
+                      required
+                      class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors appearance-none"
+                    >
+                      <option value="" disabled selected>Select a topic...</option>
+                      <option value="support">Game Support</option>
+                      <option value="business">Business Partnership</option>
+                      <option value="press">Press & Media</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <div
+                      class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-slate-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-bold text-slate-400 mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors resize-none"
+                  ></textarea>
+                </div>
+
+                <div class="form-privacy">
+                  <label class="privacy-label">
+                    <input type="checkbox" name="privacyAccepted" required />
+                    <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a>.</span>
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full py-4 bg-gradient-to-r from-pink-600 to-pink-500 hover:from-pink-500 hover:to-pink-400 text-white rounded-xl font-bold text-lg transition-all shadow-[0_0_20px_rgba(236,72,153,0.4)]"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+      <div class="container max-w-[1410px] mx-auto px-4 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div class="flex flex-col">
+            <span class="text-white font-bold text-xl tracking-tight mb-4">PixelSpark Studio</span>
+            <p class="text-sm leading-relaxed mb-6">Vibrant hyper-casual mobile experiences</p>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Links</h3>
+            <nav class="flex flex-col gap-3">
+              <a href="index.html" class="hover:text-orange-500 transition-colors text-sm">Home</a>
+              <a href="about.html" class="hover:text-orange-500 transition-colors text-sm">About</a>
+              <a href="games.html" class="hover:text-orange-500 transition-colors text-sm">Games</a>
+              <a href="blog.html" class="hover:text-orange-500 transition-colors text-sm">Blog</a>
+            </nav>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Legal</h3>
+            <nav class="flex flex-col gap-3">
+              <a href="privacy-policy.html" class="hover:text-orange-500 transition-colors text-sm"
+                >Privacy Policy</a
+              >
+              <a
+                href="terms-conditions.html"
+                class="hover:text-orange-500 transition-colors text-sm"
+                >Terms & Conditions</a
+              >
+            </nav>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Contact</h3>
+            <address class="not-italic flex flex-col gap-4 text-sm">
+              <a
+                href="https://maps.app.goo.gl/eYA2gBJjRe2C3vfT6"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-orange-500 transition-colors flex items-start gap-3"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5 shrink-0 text-orange-500"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span class="leading-snug"
+                  >101 California Street, San Francisco, CA 94111, USA</span
+                >
+              </a>
+              <a
+                href="mailto:hello@pixelsparkstudio.com"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-orange-500 transition-colors flex items-center gap-3"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5 shrink-0 text-orange-500"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>hello@pixelsparkstudio.com</span>
+              </a>
+              <a
+                href="tel:+14155550191"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-orange-500 transition-colors flex items-center gap-3"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5 shrink-0 text-orange-500"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <span>+1 415 555 0191</span>
+              </a>
+            </address>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-gray-800 text-sm text-center flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p>&copy; 2026 PixelSpark Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script defer src="assets/js/chrome.js"></script>
+  </body>
+</html>
